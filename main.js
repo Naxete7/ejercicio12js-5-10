@@ -9,12 +9,19 @@ let contraseña = ("Olivia")
 
 let usuario = prompt("Escriba aqui su contraseña")
 
-for (i = 0; i <= 3; i++) {
 
-    if (usuario === contraseña) {
-        console.log("Su contraseña es correcta")
-    } else {
-        console.log("Su contraseña es incorrecta")
+if (usuario === contraseña) {
+    console.log("Su contraseña es correcta")
+} else {
+
+    for (let i = 3; i >= 1; i--) {
+        if (usuario === contraseña) {
+            console.log("Su contraseña es correcta")
+        } else {
+
+            console.log("Su contraseña es incorrecta")
+            prompt("Escriba aqui su contraseña")
+        }
     }
 
-};
+}
